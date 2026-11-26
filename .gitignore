@@ -1,0 +1,17 @@
+# 内部过程产物（不对外发布）
+others/
+
+# Terraform 构建残留与本地状态
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+errored.tfstate
+crash.log
+
+# 本地凭据/变量（仅提交 example）
+terraform.tfvars
+
+# OS / 编辑器
+.DS_Store
+*~

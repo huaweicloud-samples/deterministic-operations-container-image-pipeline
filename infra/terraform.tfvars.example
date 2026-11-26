@@ -1,0 +1,20 @@
+# 复制本文件为 terraform.tfvars，填入真实值后执行 terraform apply。
+# 注意：不要提交真实 terraform.tfvars 到公开仓库。
+
+region        = "cn-north-4"
+
+# 受限 IAM 账号需显式提供下列三项（可在 IAM「我的凭证」或控制台 URL 中查到）：
+domain_name   = ""   # 华为云账号域名
+domain_id     = ""   # 账号域 ID
+project_id    = ""   # 目标项目 ID
+project_name  = ""   # 目标项目名称
+
+# SWR 镜像仓库配置
+organization_name     = "deterministic-ops"
+repository_name       = "demo-image"
+repository_description= ""
+repository_category   = "linux"
+retention_number      = 30
+
+# OIDC 身份提供商（可选，默认不创建，按需置 true）
+# create_oidc_provider = false
